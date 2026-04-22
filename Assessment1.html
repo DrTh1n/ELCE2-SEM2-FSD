@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Document</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Assessment1.css">
+        <script src="Assessment1.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="inputgrid">
+                <h2>Student Information</h2>
+                <label for="studentname">Student Name:</label><br>
+                <input type="text" id="studentname" name="studentname"><br><br>
+                <label for="studentroll">Student Roll Number:</label><br>
+                <input type="text" id="studentroll" name="studentroll"><br><br>
+                <label for="maths">Maths Marks:</label><br>
+                <input type="number" id="maths" name="maths"><br><br>
+                <label for="science">Science Marks:</label><br>
+                <input type="number" id="science" name="science"><br><br>
+                <label for="english">English Marks:</label><br>  
+                <input type="number" id="english" name="english"><br><br>
+                <button onclick="enterDetails(document.getElementById('studentname').value, document.getElementById('studentroll').value, document.getElementById('maths').value, document.getElementById('science').value, document.getElementById('english').value)">Enter Details</button><br><br>
+                <label for="getstudentname">Student Name to get result:</label><br>
+                <input type="text" id="getstudentname" name="getstudent">
+                <button onclick="getDetails(document.getElementById('getstudentname').value)">Get Result</button><br><br>
+                <button onclick="getstudentdata()">Display Student Data</button>  
+            </div>
+        </div>
+    </body>
+</html>
